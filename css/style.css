@@ -1,5 +1,86 @@
+/*main*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --main-color:white;
+    --alert:red;
+    --verde:#00875A;
+    --black: black;
+
+}
+main{
+    margin: 2rem auto;
+    width: 1200px;
+}
+
+img{
+    width: 300px;
+}
+
+/*container*/
+.product{
+    position: relative;
+    width: 300px;
+    height: 433.13px;
+}
+
+
+/*display*/
+.display_none{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product:hover .display_none{
+ visibility: visible;
+}
+
+
+/*lista badge*/
+.white_square{
+    background-color: var(--main-color);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 10px;
+    font-size: 1.5rem;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.discount{
+    background-color: var(--alert);
+    position: absolute;
+    left: 0;   
+}
+
+.sostenibilità{
+   position: absolute;
+   background-color: var(--verde);
+  left: 45px;
+}
+
+.badge{
+    color: var(--main-color);
+    padding: 0.25rem;
+    bottom: 15px;
+}
+
+
+/*testo*/
+.price{
+    color: var(--alert);
+}
+
+.testo_barrato{
+    text-decoration: line-through;
+    color: var(--black);
 }

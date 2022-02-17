@@ -14,12 +14,13 @@
 }
 main{
     margin: 2rem auto;
-    width: 1200px;
+    width: 1000px;
 }
 
 img{
     width: 300px;
 }
+
 
 /*container*/
 .product{
@@ -28,6 +29,18 @@ img{
     height: 433.13px;
 }
 
+.box_product{
+    display: inline-block;
+    margin: 3px;
+}
+
+.box_badge{
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
 /*display*/
 .display_none{
@@ -58,20 +71,20 @@ img{
 
 .discount{
     background-color: var(--alert);
-    position: absolute;
-    left: 0;   
+    
+     
 }
 
 .sostenibilità{
-   position: absolute;
    background-color: var(--verde);
-  left: 45px;
+   
 }
 
 .badge{
     color: var(--main-color);
     padding: 0.25rem;
     bottom: 15px;
+    display: inline-block;
 }
 
 
@@ -83,4 +96,13 @@ img{
 .testo_barrato{
     text-decoration: line-through;
     color: var(--black);
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover{
+    color: var(--alert);
 }
